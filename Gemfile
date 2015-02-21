@@ -50,5 +50,5 @@ group :test do
   gem 'shoulda-matchers', require: false
 end
 
-gem 'factory_girl'
+gem 'factory_girl_rails', '~> 4.0'
 gem 'ruby_regex'
