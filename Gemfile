@@ -56,3 +56,5 @@ end
 
 gem 'factory_girl_rails', '~> 4.0'
 gem 'ruby_regex'
+gem 'js-routes'
+gem 'gon'

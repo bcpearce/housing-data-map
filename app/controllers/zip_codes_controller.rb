@@ -1,6 +1,11 @@
 class ZipCodesController < ApplicationController
   def show
     @zip_code = ZipCode.find(params[:id])
+    gon.zip_code_id = @zip_code.id
+    respond_to do |format|
+      format.html
+      format.kml
+    end
   end
 
   def index
