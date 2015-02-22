@@ -16,10 +16,7 @@ class MedianRent < ActiveRecord::Base
     interval = (self.max_rent-self.min_rent)/ranks
     (1..ranks).each do |r|
       mrs = MedianRent.where("rent >= #{min_rent+(r-1)*interval}")
-      mrs.each do |x|
-        x.rank = r
-        x.save
-      end
+      mrs.update_all(rank: r)
     end
   end
 end

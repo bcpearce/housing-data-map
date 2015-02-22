@@ -8,7 +8,7 @@
         <description>
           <%= z.latest_median_rent.rent.to_s unless z.latest_median_rent.nil? %>
         </description>
-        <styleUrl>#grayPoly</styleUrl>
+        <styleUrl><%= assign_style(z) %></styleUrl>
         <%= z.kml.html_safe %>
       </Placemark>
     <% end %>
