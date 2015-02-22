@@ -17,7 +17,13 @@ and run the task
 ```
 rake db:seed
 ```
-to populate the database.
+to populate the database with ZIP Codes.
+
+Enter the rails console and run the function
+```
+ > ZipCode.get_rent_data!
+```
+to populate the MedianRent database.
 
 Testing
 -------
