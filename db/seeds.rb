@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+zips = nil
+File.open("#{Rails.root}/public/zips.json") do |f|
+  zips = JSON.parse(f.read)
+end
+
+zips_for_insert = zips.map { |z| ZipCode.new(code:z) }
+
+ZipCode.import zips_for_insert

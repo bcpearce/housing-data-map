@@ -50,5 +50,9 @@ group :test do
   gem 'shoulda-matchers', require: false
 end
 
+group :development do
+  gem 'activerecord-import', '>= 0.4.0'
+end
+
 gem 'factory_girl_rails', '~> 4.0'
 gem 'ruby_regex'
