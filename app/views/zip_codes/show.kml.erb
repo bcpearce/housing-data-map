@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <Style id="transBluePoly">
-      <LineStyle>
-        <width>1.5</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>18ff0000</color>
-      </PolyStyle>
-    </Style>
+    <%= render 'kml_styles' %>
     <Placemark>
       <name><%= @zip_code.code %></name>
-      <styleUrl>#transBluePoly</styleUrl>
+      <description>
+        <%= @zip_code.latest_median_rent.print unless @zip_code.latest_median_rent.nil? %>
+      </description>
+      <styleUrl><%= assign_style(@zip_code) %></styleUrl>
       <%= @zip_code.kml.html_safe %>
     </Placemark>
   </Document>

@@ -32,4 +32,11 @@ RSpec.describe MedianRent, :type => :model do
     end
   end
 
+  describe "print" do
+    let(:rent) { create(:median_rent, rent:1000) }
+    it "prints the rent with a a dollar sign" do
+      expect(rent.print).to eq("$1000")
+    end
+  end
+
 end

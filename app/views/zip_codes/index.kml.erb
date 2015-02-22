@@ -6,7 +6,7 @@
       <Placemark>
         <name><%= z.code %></name>
         <description>
-          <%= z.latest_median_rent.rent.to_s unless z.latest_median_rent.nil? %>
+          <%= z.latest_median_rent.print unless z.latest_median_rent.nil? %>
         </description>
         <styleUrl><%= assign_style(z) %></styleUrl>
         <%= z.kml.html_safe %>

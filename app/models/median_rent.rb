@@ -19,4 +19,8 @@ class MedianRent < ActiveRecord::Base
       mrs.update_all(rank: r)
     end
   end
+
+  def print
+    sprintf("$%d", self.rent) unless self.rent.nil?
+  end
 end
