@@ -44,6 +44,9 @@ group :development, :test do
 
   # test framework
   gem 'rspec-rails', '~> 3.0'
+
+  # for external api stubs
+  gem 'vcr'
 end
 
 group :test do
@@ -58,3 +61,4 @@ gem 'factory_girl_rails', '~> 4.0'
 gem 'ruby_regex'
 gem 'js-routes'
 gem 'gon'
+gem 'rest_client'
