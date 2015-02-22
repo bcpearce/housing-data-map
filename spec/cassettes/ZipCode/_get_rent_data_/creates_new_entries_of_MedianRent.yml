@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.quandl.com/api/v1/datasets/ZILLOW/RZIP_MEDIANRENTALPRICE_ALLHOMES_10001.json?auth_token=<QUANDL_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 22 Feb 2015 16:40:57 GMT
+      Etag:
+      - '"f643256f56a3c93751cfdc3651b15e24"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49617'
+      X-Request-Id:
+      - 599c6d18-0b8e-4549-9970-dcb0385e5bd9
+      X-Runtime:
+      - '0.086702'
+      Content-Length:
+      - '861'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA22UW2/aQBCF/8rKT6nEwl4gYN6iFqlIJI3SqFVTRZZjL2XV
+        tU19KSVR/3vHe3F23Twg4Hh8zsy3Y79Eoq6ruonWL38nkcyj9XLBKCWrSdRU
+        XZ2JpEwLEa2jB6lUdUJ3IlVo07RpK+B3I9I6O0RDbVbluna72336CrL9f/ew
+        vU2uNx+2Vzd3m5v7q93t3fb9Jrna7T5+ut58TighhEL5OKps0bbMxR908SCP
+        6D2YN+/WEFu2qWrQtchlWqLbWmYCXVwphT5WBVQgjLTh5Eac0Leq/jm5+Qbm
+        Xa3k82gc3HthnYEhAusILUIANgFYB2Dwx9ofa3MM5rg3x9o8l81RpecEQmD+
+        Q9se17PZXirRTJ81uJ6YzKZZVcxqi2127J6UzGYQ3H8SE2fCdWYCmTpymjW/
+        +xDRZLU8trIqIcSOX+1RexCo1j2jo4axr2p06G9ESjatyLXQV6CqRPYgT7I9
+        yFLf+wxw+5NC4PUfuSm6P8gG5WmbIvjOUpV1Ck4/R09n5/XWUqCL0+lkhw/G
+        foe6RpY/+mRZa9+ntDHZlKACaMF8pv1pf2xHKBF5krYwMyN0gQE+5fc0XpN4
+        Tcl0wZYPULevxa9OlNkZyoqqbA/qrNWqSHoDczPBhGG2ggtt5clzTCnmBOSs
+        Ul1R6p2HR+J79KG/dRJ9SVUnosdJBHx/a7c9LIgAm/MR/pSdUv01UciuGK71
+        o4HH977rIYHP48WUPE6cSjCHzecL7qsk1t3wyyXxasnK1saBunRq4HBpHeaB
+        ujC1PI5937mp5WEP3NUGDgYfZ8EUcCJ6Ck5eO+OYMqP6taAa0uNay2EeODgO
+        c29ijh2H+cJPI5bDyMFyGKmWg38W4Gs5jGoth5FqOXDOBpLg8AYHNnDgHjNQ
+        LQd/ClDdPngcGB44LOZDGqh2H/zOQH2DA6iWA/eYger2IUxz+xCqbh/YK3Vw
+        AA5xf/KroLOBwysdeGjdPng9gOr2wTtjUC0HGqiOAw0cHAfKXzujAwfi9Quq
+        4cBW3mygGg5sFfoaDuNaw4EtQwezD+wyVA2HoJY4Diz2akG1HOAFPJwxqI5D
+        oA4cQtXuA/X2DF54Zh9GPTgOS48v1FoO/mygWg4j9Q0Ow+uVXWqSj3//AUeD
+        AbZfCAAA
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 16:40:45 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,277 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.quandl.com/api/v1/datasets/ZILLOW/RZIP_MEDIANRENTALPRICE_ALLHOMES_10001.json?auth_token=<QUANDL_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 22 Feb 2015 16:40:56 GMT
+      Etag:
+      - '"f643256f56a3c93751cfdc3651b15e24"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49615'
+      X-Request-Id:
+      - 8666da58-62d6-4964-acfa-69665a8d1ff1
+      X-Runtime:
+      - '0.078873'
+      Content-Length:
+      - '861'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA22UW2/aQBCF/8rKT6nEwl4gYN6iFqlIJI3SqFVTRZZjL2XV
+        tU19KSVR/3vHe3F23Twg4Hh8zsy3Y79Eoq6ruonWL38nkcyj9XLBKCWrSdRU
+        XZ2JpEwLEa2jB6lUdUJ3IlVo07RpK+B3I9I6O0RDbVbluna72336CrL9f/ew
+        vU2uNx+2Vzd3m5v7q93t3fb9Jrna7T5+ut58TighhEL5OKps0bbMxR908SCP
+        6D2YN+/WEFu2qWrQtchlWqLbWmYCXVwphT5WBVQgjLTh5Eac0Leq/jm5+Qbm
+        Xa3k82gc3HthnYEhAusILUIANgFYB2Dwx9ofa3MM5rg3x9o8l81RpecEQmD+
+        Q9se17PZXirRTJ81uJ6YzKZZVcxqi2127J6UzGYQ3H8SE2fCdWYCmTpymjW/
+        +xDRZLU8trIqIcSOX+1RexCo1j2jo4axr2p06G9ESjatyLXQV6CqRPYgT7I9
+        yFLf+wxw+5NC4PUfuSm6P8gG5WmbIvjOUpV1Ck4/R09n5/XWUqCL0+lkhw/G
+        foe6RpY/+mRZa9+ntDHZlKACaMF8pv1pf2xHKBF5krYwMyN0gQE+5fc0XpN4
+        Tcl0wZYPULevxa9OlNkZyoqqbA/qrNWqSHoDczPBhGG2ggtt5clzTCnmBOSs
+        Ul1R6p2HR+J79KG/dRJ9SVUnosdJBHx/a7c9LIgAm/MR/pSdUv01UciuGK71
+        o4HH977rIYHP48WUPE6cSjCHzecL7qsk1t3wyyXxasnK1saBunRq4HBpHeaB
+        ujC1PI5937mp5WEP3NUGDgYfZ8EUcCJ6Ck5eO+OYMqP6taAa0uNay2EeODgO
+        c29ijh2H+cJPI5bDyMFyGKmWg38W4Gs5jGoth5FqOXDOBpLg8AYHNnDgHjNQ
+        LQd/ClDdPngcGB44LOZDGqh2H/zOQH2DA6iWA/eYger2IUxz+xCqbh/YK3Vw
+        AA5xf/KroLOBwysdeGjdPng9gOr2wTtjUC0HGqiOAw0cHAfKXzujAwfi9Quq
+        4cBW3mygGg5sFfoaDuNaw4EtQwezD+wyVA2HoJY4Diz2akG1HOAFPJwxqI5D
+        oA4cQtXuA/X2DF54Zh9GPTgOS48v1FoO/mygWg4j9Q0Ow+uVXWqSj3//AUeD
+        AbZfCAAA
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 16:40:46 GMT
+- request:
+    method: get
+    uri: http://www.quandl.com/api/v1/datasets/ZILLOW/RZIP_MEDIANRENTALPRICE_ALLHOMES_10010.json?auth_token=<QUANDL_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 22 Feb 2015 16:40:58 GMT
+      Etag:
+      - '"cb0e8c28510c866787aea99490a85b40"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49614'
+      X-Request-Id:
+      - 36dc1200-a2ca-4ce0-b9ba-ac496bcf029a
+      X-Runtime:
+      - '0.085481'
+      Content-Length:
+      - '854'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA22Ua2/aMBiF/4qVT62EwXG4hW+oRSoSpRWrNpWqitLEDGtO
+        wnIZo1X/+15fQu2MDwg4OTnH72MnHx4ry6KsvNnHZ8/jqTebjCgJxkHPq4qm
+        TFiUxxnzZt6WC1Ec0YbFAi2qOq4Z/K5YXCZ77+xNilR5l6vVww+Qzf/NdvkY
+        3S9ul/P1ZrF+mq8eN8ubRTRfre4e7hffIp8Qn4C9W5XXaJmn7C+62vIDuoHw
+        6noGtXkdiwrds5THOXosecLQ1VwIdFdk4EAYqcDemh3Rc1H+6q2fIbwpBX/v
+        jINlFlYdGCqwqlAiFGBdgFUBhnys8rEKxxCOZThW4SmvDiI+RVAC8+/r+jAb
+        DHZcsKr/rsBJYjzpJ0U2KA22waF5EzwZQLH8RLpOl6vOCDpVZT+p/sgSViUl
+        P9S8yKHEjF/sUL1nqFRrRgcFY1eUaC9vRIJXNUuVIB2oyJHZyCOv9zxX974D
+        XLlTCLL+I9dHT3teoTSuYwTfSSySRsDup+jt1GZdOhTo6ng8muGdsa9RU/H8
+        p2zmpcp9iyvd7ROUAS2YTy+/L7ftABaWRnENM1PijzDxsR88+eHMD2b+tE9D
+        ugXfrmS/G5YnJ7BlRV7vxUmpRRbJAH0zwYRiOoULdWHJQ+z7OJAnMClEk+Xq
+        zMMj8eLdylt73vdYNMx77XnA949K28EBYRBzOsCfvBFCXmMZb7LzNTkaZLzI
+        VZ8bgtFk2CevvVYlOPC9XjAJR5ZKQrWaYOyqU+11E8jEqCNiJ4x1wog46kh7
+        h27uUHuHrjcwXlfV+ILATQB6cgo7IcA+vahq0l2v4TC0pghwy8FuA9VwCCZf
+        zEA1HDpew6Gjthys2SDhAgdQDYdOguHgTgwnU3EIrFx6kQOoLYfwa4dAbTk4
+        CS0Hu42eOQwtDqAaDkMnlxgONl/wGg72bKAaDtRdg+FArR0CL3AIYWIahufT
+        B6rhYCfAQ2vOQ0c1HGxm4DUcXG/LwV6Df+bQUQ2HToLhQCxmkGA4EGtiUA2H
+        jqo5wMBfpw+8+jxQ+zkGVXOgU8tLWg40tEiCajjY6wX1Agd4iZn3g+ttnwt4
+        hZ/3Aryag7NeUDWHzsoMBzp1VmY40ImrGg5jVzUc9Jvr9fMf6NaNr18IAAA=
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 16:40:47 GMT
+- request:
+    method: get
+    uri: http://www.quandl.com/api/v1/datasets/ZILLOW/RZIP_MEDIANRENTALPRICE_ALLHOMES_10001.json?auth_token=<QUANDL_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 22 Feb 2015 16:40:57 GMT
+      Etag:
+      - '"f643256f56a3c93751cfdc3651b15e24"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49613'
+      X-Request-Id:
+      - 44b01f83-6c9c-41d7-ab9e-c663212041c2
+      X-Runtime:
+      - '0.072947'
+      Content-Length:
+      - '861'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA22UW2/aQBCF/8rKT6nEwl4gYN6iFqlIJI3SqFVTRZZjL2XV
+        tU19KSVR/3vHe3F23Twg4Hh8zsy3Y79Eoq6ruonWL38nkcyj9XLBKCWrSdRU
+        XZ2JpEwLEa2jB6lUdUJ3IlVo07RpK+B3I9I6O0RDbVbluna72336CrL9f/ew
+        vU2uNx+2Vzd3m5v7q93t3fb9Jrna7T5+ut58TighhEL5OKps0bbMxR908SCP
+        6D2YN+/WEFu2qWrQtchlWqLbWmYCXVwphT5WBVQgjLTh5Eac0Leq/jm5+Qbm
+        Xa3k82gc3HthnYEhAusILUIANgFYB2Dwx9ofa3MM5rg3x9o8l81RpecEQmD+
+        Q9se17PZXirRTJ81uJ6YzKZZVcxqi2127J6UzGYQ3H8SE2fCdWYCmTpymjW/
+        +xDRZLU8trIqIcSOX+1RexCo1j2jo4axr2p06G9ESjatyLXQV6CqRPYgT7I9
+        yFLf+wxw+5NC4PUfuSm6P8gG5WmbIvjOUpV1Ck4/R09n5/XWUqCL0+lkhw/G
+        foe6RpY/+mRZa9+ntDHZlKACaMF8pv1pf2xHKBF5krYwMyN0gQE+5fc0XpN4
+        Tcl0wZYPULevxa9OlNkZyoqqbA/qrNWqSHoDczPBhGG2ggtt5clzTCnmBOSs
+        Ul1R6p2HR+J79KG/dRJ9SVUnosdJBHx/a7c9LIgAm/MR/pSdUv01UciuGK71
+        o4HH977rIYHP48WUPE6cSjCHzecL7qsk1t3wyyXxasnK1saBunRq4HBpHeaB
+        ujC1PI5937mp5WEP3NUGDgYfZ8EUcCJ6Ck5eO+OYMqP6taAa0uNay2EeODgO
+        c29ijh2H+cJPI5bDyMFyGKmWg38W4Gs5jGoth5FqOXDOBpLg8AYHNnDgHjNQ
+        LQd/ClDdPngcGB44LOZDGqh2H/zOQH2DA6iWA/eYger2IUxz+xCqbh/YK3Vw
+        AA5xf/KroLOBwysdeGjdPng9gOr2wTtjUC0HGqiOAw0cHAfKXzujAwfi9Quq
+        4cBW3mygGg5sFfoaDuNaw4EtQwezD+wyVA2HoJY4Diz2akG1HOAFPJwxqI5D
+        oA4cQtXuA/X2DF54Zh9GPTgOS48v1FoO/mygWg4j9Q0Ow+uVXWqSj3//AUeD
+        AbZfCAAA
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 16:40:47 GMT
+- request:
+    method: get
+    uri: http://www.quandl.com/api/v1/datasets/ZILLOW/RZIP_MEDIANRENTALPRICE_ALLHOMES_10010.json?auth_token=<QUANDL_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 22 Feb 2015 16:40:57 GMT
+      Etag:
+      - '"cb0e8c28510c866787aea99490a85b40"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '50000'
+      X-Ratelimit-Remaining:
+      - '49612'
+      X-Request-Id:
+      - dd0159e0-1fde-438e-ae2e-f1975022d66f
+      X-Runtime:
+      - '0.079861'
+      Content-Length:
+      - '854'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA22Ua2/aMBiF/4qVT62EwXG4hW+oRSoSpRWrNpWqitLEDGtO
+        wnIZo1X/+15fQu2MDwg4OTnH72MnHx4ry6KsvNnHZ8/jqTebjCgJxkHPq4qm
+        TFiUxxnzZt6WC1Ec0YbFAi2qOq4Z/K5YXCZ77+xNilR5l6vVww+Qzf/NdvkY
+        3S9ul/P1ZrF+mq8eN8ubRTRfre4e7hffIp8Qn4C9W5XXaJmn7C+62vIDuoHw
+        6noGtXkdiwrds5THOXosecLQ1VwIdFdk4EAYqcDemh3Rc1H+6q2fIbwpBX/v
+        jINlFlYdGCqwqlAiFGBdgFUBhnys8rEKxxCOZThW4SmvDiI+RVAC8+/r+jAb
+        DHZcsKr/rsBJYjzpJ0U2KA22waF5EzwZQLH8RLpOl6vOCDpVZT+p/sgSViUl
+        P9S8yKHEjF/sUL1nqFRrRgcFY1eUaC9vRIJXNUuVIB2oyJHZyCOv9zxX974D
+        XLlTCLL+I9dHT3teoTSuYwTfSSySRsDup+jt1GZdOhTo6ng8muGdsa9RU/H8
+        p2zmpcp9iyvd7ROUAS2YTy+/L7ftABaWRnENM1PijzDxsR88+eHMD2b+tE9D
+        ugXfrmS/G5YnJ7BlRV7vxUmpRRbJAH0zwYRiOoULdWHJQ+z7OJAnMClEk+Xq
+        zMMj8eLdylt73vdYNMx77XnA949K28EBYRBzOsCfvBFCXmMZb7LzNTkaZLzI
+        VZ8bgtFk2CevvVYlOPC9XjAJR5ZKQrWaYOyqU+11E8jEqCNiJ4x1wog46kh7
+        h27uUHuHrjcwXlfV+ILATQB6cgo7IcA+vahq0l2v4TC0pghwy8FuA9VwCCZf
+        zEA1HDpew6Gjthys2SDhAgdQDYdOguHgTgwnU3EIrFx6kQOoLYfwa4dAbTk4
+        CS0Hu42eOQwtDqAaDkMnlxgONl/wGg72bKAaDtRdg+FArR0CL3AIYWIahufT
+        B6rhYCfAQ2vOQ0c1HGxm4DUcXG/LwV6Df+bQUQ2HToLhQCxmkGA4EGtiUA2H
+        jqo5wMBfpw+8+jxQ+zkGVXOgU8tLWg40tEiCajjY6wX1Agd4iZn3g+ttnwt4
+        hZ/3Aryag7NeUDWHzsoMBzp1VmY40ImrGg5jVzUc9Jvr9fMf6NaNr18IAAA=
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 16:40:48 GMT
+recorded_with: VCR 2.9.3
