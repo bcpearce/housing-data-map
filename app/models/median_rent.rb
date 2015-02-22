@@ -13,7 +13,7 @@ class MedianRent < ActiveRecord::Base
   end
 
   def self.assign_ranks!(ranks=8)
-    interval = (self.max_rent-self.min_rent)/ranks
+    interval = 300
     (1..ranks).each do |r|
       mrs = MedianRent.where("rent >= #{min_rent+(r-1)*interval}")
       mrs.update_all(rank: r)
