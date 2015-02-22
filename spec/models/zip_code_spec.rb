@@ -33,7 +33,7 @@ RSpec.describe ZipCode, :type => :model do
   describe "::get_rent_data!", :vcr do
     let(:zip_code1) { create(:zip_code, code:"10001") }
     let(:zip_code2) { create(:zip_code, code:"10010") }
-    
+
     it "creates new entries of Median rent for all zips" do
       count1 = zip_code1.get_rent_data.count
       count2 = zip_code2.get_rent_data.count
@@ -41,6 +41,17 @@ RSpec.describe ZipCode, :type => :model do
       expect(count2).to be > 0
       expect{ZipCode.get_rent_data!}.
           to change{ MedianRent.count }.by(count1+count2)
+    end
+  end
+
+  describe "latest_median_rent", :vcr do
+    let(:zip_code) { create(:zip_code, code:"10001") }
+
+    it "returns the most recent median rent data" do
+      create(MedianRent, as_of:Date.new(2014, 1, 1), zip_code_id:zip_code.id)
+      create(MedianRent, as_of:Date.new(2015, 1, 1), zip_code_id:zip_code.id)
+      create(MedianRent, as_of:Date.new(2013, 1, 1), zip_code_id:zip_code.id)
+      expect(zip_code.latest_median_rent.as_of).to eq(Date.new(2015, 1, 1))
     end
   end
 end

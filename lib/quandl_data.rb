@@ -4,7 +4,8 @@ module QuandlData
 
   def self.get_median_rents_by_zip(zip, fmt="json")
     url = "#{API_BASE}RZIP_MEDIANRENTALPRICE_ALLHOMES_#{zip}.#{fmt.to_s}"
-    JSON.parse(RestClient.get(url))["data"]
+    options = { params:{ auth_token:ENV["QUANDL_API_KEY"] } }
+    JSON.parse(RestClient.get(url, options))["data"]
   end
 
 end

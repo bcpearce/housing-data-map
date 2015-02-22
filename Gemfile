@@ -45,17 +45,19 @@ group :development, :test do
   # test framework
   gem 'rspec-rails', '~> 3.0'
 
+  gem 'activerecord-import', '>= 0.4.0'
+
+end
+
+group :test do
+  gem 'shoulda-matchers', require: false
   # for external api stubs
   gem 'vcr'
   gem 'webmock'
 end
 
-group :test do
-  gem 'shoulda-matchers', require: false
-end
-
 group :development do
-  gem 'activerecord-import', '>= 0.4.0'
+
 end
 
 gem 'factory_girl_rails', '~> 4.0'
