@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221231248) do
+ActiveRecord::Schema.define(version: 20150222002303) do
 
   create_table "zip_codes", force: :cascade do |t|
     t.string   "code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text     "kml"
   end
 
 end
