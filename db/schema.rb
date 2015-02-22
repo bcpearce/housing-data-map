@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150222050718) do
+ActiveRecord::Schema.define(version: 20150222070055) do
 
   create_table "median_rents", force: :cascade do |t|
     t.decimal  "rent"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150222050718) do
     t.integer  "zip_code_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "rank"
   end
 
   create_table "median_rents_by_zips", force: :cascade do |t|
