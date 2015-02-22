@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150222070055) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "median_rents", force: :cascade do |t|
     t.decimal  "rent"
     t.date     "as_of"
@@ -20,14 +23,6 @@ ActiveRecord::Schema.define(version: 20150222070055) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "rank"
-  end
-
-  create_table "median_rents_by_zips", force: :cascade do |t|
-    t.decimal  "rent"
-    t.date     "as_of"
-    t.integer  "zip_code_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
   create_table "zip_codes", force: :cascade do |t|
