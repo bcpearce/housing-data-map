@@ -9,6 +9,8 @@ RSpec.describe ZipCode, :type => :model do
 
   it { should validate_presence_of :kml }
 
+  it { should have_many :median_rents }
+
   it "has a valid factory" do
     expect(build(:zip_code)).to be_valid
   end
