@@ -19,4 +19,14 @@ RSpec.describe ZipCode, :type => :model do
     expect(build(:invalid_zip_code)).to_not be_valid
   end
 
+  describe "#get_rent_data!", :vcr do
+    let(:zip_code) { create(:zip_code) }
+    it "creates new entries of MedianRent" do
+      expect{zip_code.get_rent_data!}.to change{ MedianRent.count }
+    end
+    it "creates new entries with a reference to itself" do
+      zip_code.get_rent_data!
+      MedianRent.all.each { |mr| expect(mr.zip_code).to eq(zip_code) }
+    end
+  end
 end
