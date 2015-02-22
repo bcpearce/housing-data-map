@@ -29,4 +29,18 @@ RSpec.describe ZipCode, :type => :model do
       MedianRent.all.each { |mr| expect(mr.zip_code).to eq(zip_code) }
     end
   end
+
+  describe "::get_rent_data!", :vcr do
+    let(:zip_code1) { create(:zip_code, code:"10001") }
+    let(:zip_code2) { create(:zip_code, code:"10010") }
+    
+    it "creates new entries of Median rent for all zips" do
+      count1 = zip_code1.get_rent_data.count
+      count2 = zip_code2.get_rent_data.count
+      expect(count1).to be > 0
+      expect(count2).to be > 0
+      expect{ZipCode.get_rent_data!}.
+          to change{ MedianRent.count }.by(count1+count2)
+    end
+  end
 end

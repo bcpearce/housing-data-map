@@ -5,6 +5,14 @@ class ZipCode < ActiveRecord::Base
 
   has_many :median_rents
 
+  def self.get_rent_data
+    self.all.map { |x| x.get_rent_data }
+  end
+
+  def self.get_rent_data!
+    self.all.map { |x| x.get_rent_data! }
+  end
+
   def get_rent_data
     med_rent_data = QuandlData.get_median_rents_by_zip(self.code)
     med_rent_data.map do |mrd|
