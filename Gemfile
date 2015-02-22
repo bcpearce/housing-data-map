@@ -47,6 +47,7 @@ group :development, :test do
 
   # for external api stubs
   gem 'vcr'
+  gem 'webmock'
 end
 
 group :test do

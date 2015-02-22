@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "quandl_data.rb" do
-  describe "get_median_rents_by_zip" do
+  describe "get_median_rents_by_zip", :vcr do
 
     it "returns a nested array" do
       expect(QuandlData.get_median_rents_by_zip("10001")).to be_an(Array)
