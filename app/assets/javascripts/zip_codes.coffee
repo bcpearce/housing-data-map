@@ -14,7 +14,10 @@ newMap = () ->
 
 loadKmlLayer = (map) ->
   origin = window.location.origin
-  kmlUrl = origin + Routes.zip_code_path(gon.zip_code_id, {format: 'kml'})
+  if gon.zip_code_id
+    kmlUrl = origin + Routes.zip_code_path(gon.zip_code_id, {format: 'kml'})
+  if gon.is_index
+    kmlUrl = origin + Routes.zip_codes_path({format:'kml'})
   kmlOptions =
     suppressInfoWindows: true
     preserveViewport: false

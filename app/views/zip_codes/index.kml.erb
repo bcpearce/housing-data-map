@@ -9,10 +9,12 @@
         <color>18ff0000</color>
       </PolyStyle>
     </Style>
-    <Placemark>
-      <name><%= @zip_code.code %></name>
-      <styleUrl>#transBluePoly</styleUrl>
-      <%= @zip_code.kml.html_safe %>
-    </Placemark>
+    <% @zip_codes.each do |z| %>
+      <Placemark>
+        <name><%= z.code %></name>
+        <styleUrl>#transBluePoly</styleUrl>
+        <%= z.kml.html_safe %>
+      </Placemark>
+    <% end %>
   </Document>
 </kml>

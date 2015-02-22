@@ -10,5 +10,10 @@ class ZipCodesController < ApplicationController
 
   def index
     @zip_codes = ZipCode.all
+    gon.is_index = true
+    respond_to do |format|
+      format.html
+      format.kml
+    end
   end
 end
