@@ -69,3 +69,6 @@ gem 'ruby_regex'
 gem 'js-routes'
 gem 'gon'
 gem 'rest_client'
+
+# ruby version
+ruby "2.2.0"
