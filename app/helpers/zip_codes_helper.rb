@@ -9,7 +9,7 @@ module ZipCodesHelper
                  7 => "0041DF",
                  8 => "0002E5",
                  0 => "333333"}
-  OPACITY = { line:"88", poly:"50" }
+  OPACITY = { line:"88", poly:"70" }
 
   def assign_style(zip)
     if !zip.latest_median_rent.nil? && zip.latest_median_rent.rank
