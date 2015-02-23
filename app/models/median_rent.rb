@@ -12,6 +12,10 @@ class MedianRent < ActiveRecord::Base
     MedianRent.order(:rent).first.rent
   end
 
+  def self.available_dates
+    MedianRent.all.map(&:as_of).uniq
+  end
+
   def self.assign_ranks!(ranks=8)
     interval = 450
     (1..ranks).each do |r|

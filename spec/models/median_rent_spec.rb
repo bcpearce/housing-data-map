@@ -39,4 +39,16 @@ RSpec.describe MedianRent, :type => :model do
     end
   end
 
+  describe "::available_dates" do
+    before do
+      create(:median_rent, rent:1000, as_of:Date.new(2013,1,1))
+      create(:median_rent, rent:1500, as_of:Date.new(2013,1,2))
+    end
+    it "returns a list of all dates with data" do
+      expect(MedianRent.available_dates).to eq(
+          [Date.new(2013,1,1), Date.new(2013,1,2)])
+    end
+  end
+
+
 end
