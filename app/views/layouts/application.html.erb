@@ -10,7 +10,12 @@
 </head>
 <body>
 
-<%= yield %>
+  <div class="container">
+    <div class="buffer"></div>
+    <%= render 'layouts/navigation' %>
+    <div class="buffer"></div>
+    <%= yield %>
+  </div>
 
 </body>
 </html>

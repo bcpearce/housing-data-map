@@ -6,7 +6,7 @@ newMap = () ->
   mapCanvas = document.getElementById('map-canvas');
   mapOptions =
     center: new google.maps.LatLng(40.783, -73.965)
-    zoom: 10
+    zoom: 11
 
   map = new google.maps.Map(mapCanvas, mapOptions);
   loadKmlLayer(map)
@@ -22,7 +22,7 @@ loadKmlLayer = (map) ->
     suppressInfoWindows: true
     preserveViewport: false
     map: map
-  myParser = new geoXML3.parser({map:map})
+  myParser = new geoXML3.parser(kmlOptions)
   myParser.parse(kmlUrl)
 
 
