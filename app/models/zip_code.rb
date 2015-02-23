@@ -35,7 +35,7 @@ class ZipCode < ActiveRecord::Base
   def add_long_name!
     if self.code
       self.long_name =
-          Geocoder.search(10010).first.address_components[1]["long_name"]
+          Geocoder.search(self.code).first.address_components[1]["long_name"]
       self.save
     end
   end
