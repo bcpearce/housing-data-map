@@ -31,4 +31,13 @@ class ZipCode < ActiveRecord::Base
     MedianRent.import self.get_rent_data
   rescue ArgumentError
   end
+
+  def add_long_name!
+    if self.code
+      self.long_name =
+          Geocoder.search(10010).first.address_components[1]["long_name"]
+      self.save
+    end
+  end
+
 end

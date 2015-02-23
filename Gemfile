@@ -70,6 +70,7 @@ gem 'ruby_regex'
 gem 'js-routes'
 gem 'gon'
 gem 'rest_client'
+gem 'geocoder'
 
 # ruby version
 ruby "2.2.0"

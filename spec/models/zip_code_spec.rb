@@ -54,4 +54,12 @@ RSpec.describe ZipCode, :type => :model do
       expect(zip_code.latest_median_rent.as_of).to eq(Date.new(2015, 1, 1))
     end
   end
+
+  describe "add_long_name!", :vcr do
+    let(:zip_code) { create(:zip_code, code:"10010") }
+    it "adds a string to the long_name field" do
+      zip_code.add_long_name!
+      expect(zip_code.long_name).to eq("Manhattan")
+    end
+  end
 end
