@@ -19,11 +19,11 @@ loadKmlLayer = (map) ->
   if gon.is_index
     kmlUrl = origin + Routes.zip_codes_path({format:'kml'})
   kmlOptions =
-    suppressInfoWindows: true
+    singleInfoWindow: true
     preserveViewport: false
     map: map
+
   myParser = new geoXML3.parser(kmlOptions)
   myParser.parse(kmlUrl)
-
 
 $(document).ready(newMap)

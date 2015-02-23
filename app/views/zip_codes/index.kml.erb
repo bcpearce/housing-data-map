@@ -4,8 +4,9 @@
   <Document>
     <% @zip_codes.each do |z| %>
       <Placemark>
-        <name><%= z.code %></name>
+        <name><%= "#{z.long_name} (#{z.code})" %></name>
         <description>
+          Median Rent Price
           <%= z.latest_median_rent.print unless z.latest_median_rent.nil? %>
         </description>
         <styleUrl><%= assign_style(z) %></styleUrl>
