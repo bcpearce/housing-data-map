@@ -62,4 +62,30 @@ RSpec.describe ZipCode, :type => :model do
       expect(zip_code.long_name).to eq("Manhattan")
     end
   end
+
+  describe "median_rent_on" do
+    let(:zip_code) {
+        create(:zip_code, code:"10010") }
+
+    context "no date given" do
+      it "returns the most recent data" do
+        rent = create(:median_rent, zip_code:zip_code,
+            as_of:Date.new(2014,11,30), rent:1000)
+        expect(zip_code.median_rent_on(nil)).to eq(rent)
+      end
+    end
+    context "date given" do
+      it "returns the rent from that date" do
+        rent = create(:median_rent, zip_code:zip_code,
+            as_of:Date.new(2014,11,30), rent:1000)
+        expect(zip_code.median_rent_on(Date.new(2014,11,30))).to eq(rent)
+      end
+    end
+    context "date doesn't exist" do
+      it "is nil" do
+        expect(zip_code.median_rent_on(Date.new(2013,11,30))).to be_nil
+      end
+    end
+  end
+
 end

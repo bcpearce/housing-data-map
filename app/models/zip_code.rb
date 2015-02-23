@@ -40,4 +40,12 @@ class ZipCode < ActiveRecord::Base
     end
   end
 
+  def median_rent_on(date)
+    if date.nil?
+      self.latest_median_rent
+    else
+      self.median_rents.find_by(as_of:date)
+    end
+  end
+
 end
