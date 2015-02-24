@@ -8,7 +8,7 @@ module ZipCodesHelper
                  6 => "007DDA",
                  7 => "0041DF",
                  8 => "0002E5",
-                 0 => "333333"}
+                 0 => "888888"}
   OPACITY = { line:"AA", poly:"70" }
 
   def assign_style(median_rent)
