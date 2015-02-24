@@ -7,9 +7,9 @@
         <name><%= "#{z.long_name} (#{z.code})" %></name>
         <description>
           Median Rent Price
-          <%= z.latest_median_rent.print unless z.latest_median_rent.nil? %>
+          <%= z.median_rent_on(params[:date]).print unless z.median_rent_on(params[:date]).nil? %>
         </description>
-        <styleUrl><%= assign_style(z) %></styleUrl>
+        <styleUrl><%= assign_style(z.median_rent_on(params[:date])) %></styleUrl>
         <%= z.kml.html_safe %>
       </Placemark>
     <% end %>

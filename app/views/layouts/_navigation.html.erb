@@ -1,3 +1,13 @@
-<ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="#">Median Rent</a></li>
-</ul>
+<div class="row">
+  <div class="col-xs-10">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#">Median Rent</a></li>
+    </ul>
+  </div>
+  <div class="col-xs-2">
+    <%= select_tag "As of:",
+        options_for_select(MedianRent.available_dates.sort.reverse),
+        class:"form-control",
+        id:"date-picker" %>
+  </div>
+</div>

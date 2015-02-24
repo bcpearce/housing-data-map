@@ -11,9 +11,9 @@ module ZipCodesHelper
                  0 => "333333"}
   OPACITY = { line:"AA", poly:"70" }
 
-  def assign_style(zip)
-    if !zip.latest_median_rent.nil? && zip.latest_median_rent.rank
-      "#Poly#{zip.latest_median_rent.rank}".html_safe
+  def assign_style(median_rent)
+    if !median_rent.nil? && median_rent.rank
+      "#Poly#{median_rent.rank}".html_safe
     else
       "#nilPoly".html_safe
     end
