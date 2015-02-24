@@ -6,7 +6,7 @@
   </div>
   <div class="col-xs-2">
     <%= select_tag "As of:",
-        options_for_select(MedianRent.available_dates.sort.reverse),
+        options_for_select(MedianRent.available_dates.sort.reverse, params[:date]),
         class:"form-control",
         id:"date-picker" %>
   </div>

@@ -7,8 +7,8 @@ origin = window.location.origin
 newMap = () ->
   mapCanvas = document.getElementById('map-canvas');
   mapOptions =
-    center: new google.maps.LatLng(40.783, -73.965)
-    zoom: 11
+    #center: new google.maps.LatLng(40.783, -73.965)
+    zoom: 10
 
   map = new google.maps.Map(mapCanvas, mapOptions);
   loadKmlLayer(map, gon.date)
