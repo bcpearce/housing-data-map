@@ -11,7 +11,10 @@ class ZipCodesController < ApplicationController
   end
 
   def index
-    @zip_codes = ZipCode.all
+    @zip_codes = ZipCode.all.order(:id)
+    date = params[:date]
+    date ||= MedianRent.available_dates.sort.last
+    @median_rents = MedianRent.where(as_of:date)
     gon.is_index = true
     gon.date = params[:date]
     respond_to do |format|

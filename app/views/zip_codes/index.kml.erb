@@ -7,9 +7,10 @@
         <name><%= "#{z.long_name} (#{z.code})" %></name>
         <description>
           Median Rent Price
-          <%= z.median_rent_on(params[:date]).print unless z.median_rent_on(params[:date]).nil? %>
+          <%= mr = @median_rents.find { |x| x.zip_code_id == z.id } %>
+          <%= mr.print unless mr.nil? %>
         </description>
-        <styleUrl><%= assign_style(z.median_rent_on(params[:date])) %></styleUrl>
+        <styleUrl><%= assign_style(mr) %></styleUrl>
         <%= z.kml.html_safe %>
       </Placemark>
     <% end %>

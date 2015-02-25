@@ -71,6 +71,7 @@ gem 'js-routes'
 gem 'gon'
 gem 'rest_client'
 gem 'geocoder'
+gem 'geoxml-rails'
 
 # ruby version
 ruby "2.2.0"
