@@ -1,13 +1,13 @@
 module ZipCodesHelper
 
   COLOR_CODE = { 1 => "00BF03",
-                 2 => "00C4BC",
+                 2 => "00C43A",
                  3 => "00C975",
                  4 => "00CFB2",
-                 5 => "00B6D4",
+                 5 => "00B5D4",
                  6 => "007DDA",
                  7 => "0041DF",
-                 8 => "0002E5",
+                 8 => "0001E5",
                  0 => "888888"}
   OPACITY = { line:"AA", poly:"70" }
 
