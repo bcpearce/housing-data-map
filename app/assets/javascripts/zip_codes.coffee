@@ -35,6 +35,8 @@ loadKmlLayer = (map, date) ->
   myParser = new geoXML3.parser(kmlOptions)
   myParser.parse(kmlUrl)
 
+delay = (ms, func) -> setTimeout func, ms
+
 $(document).ready(newMap)
 
 $(document).ready ->
@@ -42,5 +44,5 @@ $(document).ready ->
     date = $('#date-picker').val()
     docs = myParser.docs
     loadKmlLayer(map, date)
-    myParser.hideDocument(docs[docs.length-1])
+    delay 550, -> myParser.hideDocument docs[docs.length-1]
     #window.location.replace(origin + Routes.zip_codes_path({date:date}))
