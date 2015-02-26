@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'csv'
 
+puts "clearing old ZipCode database"
 ZipCode.delete_all
 
 # get the data from the zip code json file for NYC
@@ -32,4 +33,14 @@ end
 # save to the database
 if ZipCode.import zips_for_insert
   puts "ZIP Codes successfully imported"
+end
+
+if ZipCode.any?
+  puts "Rent Data Acquired" if ZipCode.get_rent_data!
+  puts "Assigning Ranks to Rent rates" if MedianRent.assign_ranks!
+end
+
+ZipCode.all.each do |z|
+  z.add_long_name!
+  z.save!
 end

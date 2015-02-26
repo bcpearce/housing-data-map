@@ -6,9 +6,9 @@
       <Placemark>
         <name><%= "#{z.long_name} (#{z.code})" %></name>
         <description>
-          Median Rent Price
-          <%= mr = @median_rents.find { |x| x.zip_code_id == z.id } %>
-          <%= mr.print unless mr.nil? %>
+          Median Rent Price:
+          <% mr = @median_rents.find { |x| x.zip_code_id == z.id } %>
+          <%= mr.print.html_safe unless mr.nil? %>
         </description>
         <styleUrl><%= assign_style(mr) %></styleUrl>
         <%= z.kml.html_safe %>
