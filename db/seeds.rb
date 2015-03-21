@@ -43,4 +43,5 @@ end
 ZipCode.all.each do |z|
   z.add_long_name!
   z.save!
+  sleep(0.1)
 end
